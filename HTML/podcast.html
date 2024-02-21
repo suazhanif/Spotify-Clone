@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./pngegg.png" type="image/icon type">
+    <link rel="stylesheet" href="/CSS/java.css">
+    <title>Spotify - Music for everyone</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+          <div class="home">
+            <div class="nav-option"style="opacity: 1;">
+                <i class="fa-solid fa-house"></i>
+                <a href="/index.html">Home</a>
+            </div>
+            <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#"> Search</a>
+            </div>
+          </div>
+          <div class="library">
+            <div class="options">
+                <div class="lib-option nav-option">
+                    <i class="fa-solid fa-music"></i>
+                    <a href="#">Your Library</a>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-plus" title="Create Playlist or Folder"></i>
+                    <i class="fa-solid fa-arrow-right" title="Show more"></i>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <p class="box-p1">Create your first playlist</p>
+                    <p class="box-p2">It's easy, we'll help you</p>
+                    <a href="/HTML/login.html"><button class="badge">Create playlist</button></a> 
+                </div>
+                <div class="box">
+                    <p class="box-p1">Let's find some podcasts to follow</p>
+                    <p class="box-p2">We'll keep you updated on new episodes</p>
+                    <button class="badge">Browse podcasts</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+        <div id="play-img">
+          <img src="/podcastcover.jpg">
+        
+    
+            <h1 id="play-space">Top 10 - Podcasts</h1>
+          </div>
+
+            <div class="songItemContainer">
+                <div class="songItem">
+                  <img src="mood.jpg" />
+                  <span class="songName">Dreamer - Alan Walker</span>
+                  <span class="songListPlay"
+                    ><span class="timeStamp"
+                      >30.00<i
+                        id="0"
+                        class="fa-regular songItemPlay fa-circle-play"
+                      ></i></span
+                  ></span>
+                </div>
+                <div class="songItem">
+                  <img src="./assets/cover.jpeg" alt="1" />
+                  <span class="songName">Dreamer - Alan Walker</span>
+                  <span class="songListPlay"
+                    ><span class="timeStamp"
+                      >2.34<i
+                        id="1"
+                        class="fa-regular songItemPlay fa-circle-play"
+                      ></i></span
+                  ></span>
+                </div>
+                <div class="songItem">
+                  <img src="./assets/cover.jpeg" alt="1" />
+                  <span class="songName">Dreamer - Alan Walker</span>
+                  <span class="songListPlay"
+                    ><span class="timeStamp"
+                      >2.34<i
+                        id="2"
+                        class="fa-regular songItemPlay fa-circle-play"
+                      ></i></span
+                  ></span>
+                </div>
+               
+                
+              </div>
+            </div>
+            <div class="songBanner"></div>
+          </div>
+      
+          <div class="bottom">
+            <input
+              type="range"
+              name="range"
+              id="myProgressBar"
+              min="0"
+              value="0"
+              max="100"
+            />
+            <div class="icons">
+              <!-- fontawesome icons -->
+              <i class="fa-2x fa-solid fa-backward" id="previous"></i>
+              <i class="fa-2x fa-regular fa-circle-play" id="masterPlay"></i>
+              <i class="fa-2x fa-solid fa-forward" id="next"></i>
+            </div>
+            <div class="songInfo">
+              <img
+                src="/assets/playing.gif"
+                alt="playingGif"
+                width="42px"
+                id="gif"
+              /><span id="masterSongName">Mood</span>
+            </div>
+          </div>
+      
+          <!-- Script links -->
+          <script
+            src="https://kit.fontawesome.com/cc36c474df.js"
+            crossorigin="anonymous"
+          ></script>
+          <script src="/JS/podcast.js"></script>
+   
+</body>
+</html>
